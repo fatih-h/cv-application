@@ -27,32 +27,37 @@ function Edu(props) {
 
     return (
         <div className="edu">
-            <form>
+            <div className="input-div">
+                <h3>Education</h3>
+                <p>Please add your academic background.</p>
+                <p>We will not directly qualify you through education.</p>
+            </div>
+            <form className="input-form">
+                <label htmlFor="school">School name</label>
                 <input
                     type="text"
                     name="school"
-                    placeholder="School name"
                     value={school}
                     onChange={handleChange}
                 />
+                <label htmlFor="study">Major field of study</label>
                 <input
                     type="text"
                     name="study"
-                    placeholder="Major field of study"
                     value={study}
                     onChange={handleChange}
                 />
+                <label htmlFor="startStudy">Start date</label>
                 <input
                     type="text"
                     name="startStudy"
-                    placeholder="Start date"
                     value={startStudy}
                     onChange={handleChange}
                 />
+                <label htmlFor="endStudy">End date</label>
                 <input
                     type="text"
                     name="endStudy"
-                    placeholder="End date"
                     value={endStudy}
                     onChange={handleChange}
                 />

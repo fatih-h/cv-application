@@ -28,39 +28,47 @@ function Exp(props) {
 
     return (
         <div className="exp">
-            <form>
+            <div className="input-div">
+                <h3>Experience</h3>
+                <p>
+                    Please add any work, community or volunteer experience you
+                    had.
+                </p>
+                <p>This is the most crucial part for us.</p>
+            </div>
+            <form className="input-form">
+                <label htmlFor="company">Company name</label>
                 <input
                     type="text"
                     name="company"
-                    placeholder="Company name"
                     value={company}
                     onChange={handleChange}
                 />
+                <label htmlFor="title">Job title</label>
                 <input
                     type="text"
                     name="title"
-                    placeholder="Job title"
                     value={title}
                     onChange={handleChange}
                 />
+                <label htmlFor="tasks">Main task</label>
                 <input
                     type="text"
                     name="tasks"
-                    placeholder="Main task"
                     value={tasks}
                     onChange={handleChange}
                 />
+                <label htmlFor="startWork">Start date</label>
                 <input
                     type="text"
                     name="startWork"
-                    placeholder="Start date"
                     value={startWork}
                     onChange={handleChange}
                 />
+                <label htmlFor="endWork">End date</label>
                 <input
                     type="text"
                     name="endWork"
-                    placeholder="End date"
                     value={endWork}
                     onChange={handleChange}
                 />

@@ -29,9 +29,12 @@ function App() {
 
     return (
         <div className="app">
-            <Info getInfo={displayInfo} />
-            <Edu getEdu={displayEdu} />
-            <Exp getExp={displayExp} />
+            <h1 className="heading">Cv Application</h1>
+            <div className="form">
+                <Info getInfo={displayInfo} />
+                <Edu getEdu={displayEdu} />
+                <Exp getExp={displayExp} />
+            </div>
             <Cv
                 dataInfo={information}
                 dataEdu={education}
