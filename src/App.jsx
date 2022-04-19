@@ -6,24 +6,9 @@ import Cv from "./components/Cv";
 
 
 function App() {
-    const [information, setInformation] = useState({
-        name: "Fatih Huseyinogullari",
-        email: "fatih.hsu1907@gmail.com",
-        phone: "5369350501",
-    });
-    const [education, setEducation] = useState({
-        school: "IUC",
-        study: "Computer Science",
-        startStudy: "2018",
-        endStudy: "2024"
-    });
-    const [experience, setExperience] = useState({
-        company: "Google",
-        title: "Jr.Software Engineer",
-        tasks: "AngularJs",
-        startWork: "2024",
-        endWork: "Ongoing"
-    });
+    const [information, setInformation] = useState({});
+    const [education, setEducation] = useState({});
+    const [experience, setExperience] = useState({});
 
     function displayInfo(contact) {
         setInformation({...contact});
