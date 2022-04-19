@@ -4,7 +4,7 @@ function CvInfo(props) {
     const { name, email, phone } = props.part;
     return (
         <div className="cvinfo">
-            <p>{name}</p>
+            <p className="cvinfo__name">{name}</p>
             <p>{email}</p>
             <p>{phone}</p>
         </div>

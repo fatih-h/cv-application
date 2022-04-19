@@ -37,6 +37,7 @@ p {
         #005aa7,
         #fffde4
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom:5vh;
 }
 .form {
     margin: 0 15vw;
@@ -137,12 +138,35 @@ p {
     margin: 40px 0;
 }
 .cv {
+    margin: 5vh 15vw 0;
+    background-color: aliceblue;
+    padding: 30px 5vw;
+    box-shadow: 3px 3px 6px 0px #ccdbe8 inset,
+        -3px -3px 6px 1px rgba(255, 255, 255, 0.5) inset;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .cvinfo {
+    flex:0 1 20%;
+    padding-bottom: 40px;
+    border-bottom:5px solid rgb(156, 36, 36);
 }
+
+.cvinfo__name{
+    font-weight: 700;
+}
+
 .cvedu {
+    flex:0 1 40%;
+    margin-bottom: 40px;
+    border-bottom:5px solid rgb(54, 70, 195);
+    padding:20px 0;
 }
 
 .cvexp {
+    flex:0 1 40%;
+    margin-bottom: 40px;
 }
