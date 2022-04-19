@@ -19,8 +19,8 @@ function Edu(props) {
     }
 
     function submitEdu(e) {
-        props.getEdu(education);
         e.preventDefault();
+        props.getEdu(education);
     }
 
     const { school, study, startStudy, endStudy } = education;

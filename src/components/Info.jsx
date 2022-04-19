@@ -18,8 +18,9 @@ function Info(props) {
     }
 
     function submitInfo(e) {
-        props.getInfo(contact);
         e.preventDefault();
+        props.getInfo(contact);
+        
     }
 
     const { name, email, phone } = contact;

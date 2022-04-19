@@ -4,27 +4,22 @@ import Edu from "./components/Edu";
 import Exp from "./components/Exp";
 import Cv from "./components/Cv";
 
+
 function App() {
     const [information, setInformation] = useState({});
     const [education, setEducation] = useState({});
     const [experience, setExperience] = useState({});
 
     function displayInfo(contact) {
-        setInformation(() => {
-            return { ...contact };
-        });
+        setInformation({...contact});
     }
 
     function displayEdu(education) {
-        setEducation(() => {
-            return { ...education };
-        });
+        setEducation({...education});
     }
 
     function displayExp(job) {
-        setExperience(() => {
-            return { ...job };
-        });
+        setExperience({...job});
     }
 
     return (

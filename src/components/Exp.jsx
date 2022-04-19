@@ -20,11 +20,13 @@ function Exp(props) {
     }
 
     function submitExp(e) {
-        props.getExp(job);
         e.preventDefault();
+        props.getExp(job);
+        
     }
-
+    
     const { company, title, tasks, startWork, endWork } = job;
+    
 
     return (
         <div className="exp">
